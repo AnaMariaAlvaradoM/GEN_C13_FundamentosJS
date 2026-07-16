@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,39 +8,71 @@
     <title>Festival Estéreo Picnic 2027</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header class="hero">
-    <nav class="navegacion" aria-label="Navegación principal">
-        <a class="marca" href="#">FEP 2027</a>
+    <header class="hero">
+        <nav class="navegacion" aria-label="Navegación principal">
+            <a class="marca" href="#">FEP 2027</a>
 
-        <section class="menu" aria-label="Enlaces del sitio">
-            <a href="#artistas">Cartel</a>
-            <a href="#informacion">Información</a>
-            <a href="#contacto">Contacto</a>
+            <section class="menu" aria-label="Enlaces del sitio">
+                <a href="#artistas">Cartel</a>
+                <a href="#informacion">Información</a>
+                <a href="#contacto">Contacto</a>
+            </section>
+        </nav>
+
+        <section class="hero-contenido">
+            <p class="hero-etiqueta">Bogotá · Marzo de 2027</p>
+            <h1>Festival<br>Estéreo Picnic</h1>
+            <p class="hero-frase">Un Mundo Distinto</p>
+            <a class="boton-principal" href="#artistas">Explorar el cartel</a>
+
+            <p class="resumen-intereses">
+                Artistas que te interesan:
+                <span id="contador">0</span>
+            </p>
         </section>
-    </nav>
 
-    <section class="hero-contenido">
-        <p class="hero-etiqueta">Bogotá · Marzo de 2027</p>
-        <h1>Festival<br>Estéreo Picnic</h1>
-        <p class="hero-frase">Un Mundo Distinto</p>
-        <a class="boton-principal" href="#artistas">Explorar el cartel</a>
+        <section class="paisaje" aria-hidden="true">
+            <span class="sol"></span>
+            <span class="nube nube-uno"></span>
+            <span class="nube nube-dos"></span>
+            <span class="montana montana-uno"></span>
+            <span class="montana montana-dos"></span>
+            <span class="montana montana-tres"></span>
+        </section>
+    </header>
 
-        <p class="resumen-intereses">
-            Artistas que te interesan:
-            <span id="contador">0</span>
-        </p>
-    </section>
+    <main>
+        <section id="artistas" class="seccion-artistas">
+            <header class="encabezado-seccion">
+                <p class="etiqueta-seccion">Tres sonidos · Tres días</p>
+                <h2>Cartel 2027</h2>
+                <p>Conoce algunos de los artistas ficticios de esta edición.</p>
+            </header>
 
-    <section class="paisaje" aria-hidden="true">
-        <span class="sol"></span>
-        <span class="nube nube-uno"></span>
-        <span class="nube nube-dos"></span>
-        <span class="montana montana-uno"></span>
-        <span class="montana montana-dos"></span>
-        <span class="montana montana-tres"></span>
-    </section>
-</header>
+            <section class="grid-artistas" aria-label="Artistas del festival">
+                <article class="artista">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=900&q=80"
+                            alt="Público levantando las manos durante un concierto al aire libre">
+                        <figcaption>Nébula Cardinal abre el escenario principal.</figcaption>
+                    </figure>
+
+                    <section class="artista-contenido">
+                        <p class="genero">Pop alternativo</p>
+                        <h3>Nébula Cardinal</h3>
+                        <p>
+                            <time datetime="2027-03-19">Viernes 19 de marzo</time>
+                        </p>
+                        <p>Escenario: Un Mundo Distinto</p>
+                        <button id="btn-nebula" type="button">♡ Me interesa</button>
+                    </section>
+                </article>
+            </section>
+        </section>
+    </main>
     <script src="app.js"></script>
 </body>
+
 </html>
